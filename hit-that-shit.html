@@ -10,9 +10,17 @@
 
 	* { padding:0; margin:0;overflow:hidden;}
 	canvas { background: linear-gradient(to bottom right, #e53935, #e35d5b); display: block; margin: 0 auto; }
+
+	p
+	{
+		color: green;
+		text-align: center;
+		font-family: "Arial", Helvetica, sans-serif;
+	}
 	</style>
 </head>
 <body>
+
 <canvas id="myCanvas" width="900" height="600">
 </canvas>
 
@@ -48,8 +56,8 @@ var rightPressed = false;
 var leftPressed = false;
 
 var brickRowCount = 3;
-var brickColumnCount = 15;
-var brickWidth = 20;
+var brickColumnCount = 12;
+var brickWidth = 40;
 var brickHeight = 20;
 var brickPadding = 60;
 var brickOffsetTop = 30;
@@ -299,6 +307,9 @@ draw();
 
 
 </script>
-
+<footer>
+  <p>Developed By Avinash Bharti</p>
+  
+</footer>
 </body>
 </html>
