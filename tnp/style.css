@@ -17,3 +17,10 @@ html, body
 {
 	padding-left: 40px;
 }
+
+
+.card-pad
+{
+	margin-left: 20px;
+	padding: 20px;
+}
