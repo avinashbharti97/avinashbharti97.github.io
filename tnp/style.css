@@ -9,18 +9,11 @@ html, body
 
 
 }
-.members
-{
-	padding-left: 20%;
-}
-#jumbotron_contents
-{
-	padding-left: 40px;
-}
+
 
 
 .card-pad
 {
-	margin-left: 20px;
-	padding: 20px;
+	margin: 20px;
+	padding: 0px;
 }
