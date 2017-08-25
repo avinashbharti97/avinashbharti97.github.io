@@ -1,0 +1,19 @@
+html, body
+{
+	overflow-x: hidden;
+}
+
+.header
+{
+	background: linear-gradient(to right, #ff9966, #ff5e62);
+
+
+}
+.members
+{
+	padding-left: 20%;
+}
+#jumbotron_contents
+{
+	padding-left: 40px;
+}
