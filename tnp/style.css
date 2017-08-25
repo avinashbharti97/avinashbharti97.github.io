@@ -1,24 +1,20 @@
 html, body
 {
 	overflow-x: hidden;
+	text-decoration: none;
 }
 
 .header
 {
 	background: linear-gradient(to right, #ff9966, #ff5e62);
 	color: white;
-
-
 }
-
-
 
 .card-pad
 {
 	margin: 20px;
 	padding: 0px;
 }
-
 .page-footer
 {
 	padding:20px;
@@ -26,4 +22,26 @@ html, body
 	color: white;
 	text-decoration: none;
 	margin-top: 20px;
+}
+.jumbo-index-page
+{
+	height: 100vh;
+	background: linear-gradient(to right, #ff9966, #ff5e62);
+	color: white;
+}
+
+.quotes
+{
+	text-align: center;
+}
+
+.card-index
+{
+	
+}
+
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
 }
