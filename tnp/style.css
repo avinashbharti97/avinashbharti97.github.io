@@ -17,3 +17,12 @@ html, body
 	margin: 20px;
 	padding: 0px;
 }
+
+.page-footer
+{
+	padding:20px;
+	background-color: #464b51;
+	color: white;
+	text-decoration: none;
+	margin-top: 20px;
+}
