@@ -6,6 +6,7 @@ html, body
 .header
 {
 	background: linear-gradient(to right, #ff9966, #ff5e62);
+	color: white;
 
 
 }
