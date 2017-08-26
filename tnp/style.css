@@ -85,13 +85,19 @@ html, body
 .zig-zag
 {
 	
-	margin: 50px;
+	
 	
 	
 }
 .zig-zag-2
 {
 	padding: 50px;
+}
+
+.contact-us
+{
+	text-align: center;
+
 }
 
 
