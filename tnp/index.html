@@ -17,25 +17,26 @@
     
     
 
-    <!--smooth scroll-->
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+   
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous">
+	</script>
   	
 
     
-    <!--ends scroll-->
-  <script type="text/javascript">
-  $(document).ready(function(){
-$("#scrollButton").click(function(event) {
-	// alert("h");
-    // On-page links
-    if (
+    
+	<script type="text/javascript">
+  		$(document).ready(function(){
+		$("#scrollButton").click(function(event) {
+		// alert("h");
+    	// On-page links
+    	if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
-    ) {
+    	) {
       // Figure out element to scroll to
       var target = $(this.hash);
       console.log(target);
@@ -86,15 +87,15 @@ $("#scrollButton").click(function(event) {
     } // End if
   });*/
 
-  </script>
+</script>
 
     
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  </head>
-  <body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	</head>
+		<body>
 
  
 
@@ -105,11 +106,33 @@ $("#scrollButton").click(function(event) {
 
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="icons/logo.png" height="62px" width="62px"><h6 id="logo-top">training & placement cell</h6></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+			<!-- <div class="row"> -->
+				
+				
+					
+						<div class="col-9 ">
+							<a class="navbar-brand js-scroll-trigger " href="#page-top"><img src="icons/logo1.png"height="100%"width="100%"></a>
+						</div>
+						<!-- <div class="col-6">
+							<h4>Training & Placement Cell</h4>
+							<h6 id="logo-text">National Institute Of Technology kkr</h6>
+						</div> -->
+						<div class="col-3">
+								<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									  </button>
+
+						</div>
+					
+					
+				
+			</div>
+    	</div>
+        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="icons/logo.png" height="62px" width="62px"><h6 id="logo-top">training & placement cell</h6></a> -->
+        <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -135,24 +158,24 @@ $("#scrollButton").click(function(event) {
   
 
   <div class="jumbotron jumbotron-fluid jumbo-index-page">
-  	<div class="container ">
-   	 <h1 class="display-6"></h1>
+  	
+   	 
     	<!--<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
 
-    	<div class="container header-login-btn">
+    	<div class="container header-button">
     		<div class="row">
-    			<div class="col-md-6 col-12">
+    			<div class="col-md-3 col-12 ">
     				<p class="lead">
-    					<a class="btn btn-primary btn-lg" href="#" role="button" >Students Login</a>
+    					<a class="button"   href="#" role="button" >Students Login</a>
   					</p>
 
 
 
     				
     			</div>
-    			<div class="col-md-6 col-12">
+    			<div class="col-md-3 col-12">
     				<p class="lead">
-    					<a class="btn btn-primary btn-lg" href="#" role="button">Industry Login</a>
+							<a class="button "  href="#" role="button" >Industry Login</a>
   					</p>
     				
     			</div>
@@ -429,19 +452,24 @@ $("#scrollButton").click(function(event) {
   <div class="container">
   	<div class="row">
   		<div class="col-md-6">
-  		 <h1 class="display-3 why-nit">Why </br>
-  		 </h1>
+				<h4 class="display-6 why-nit">WHY
+					</h4>
+  		 <h1 class="display-6 why-nit">NIT KURUKSHETRA 
+		   </h1>
+		   <p class="lead">
+			<a class="button "  href="#" role="button" >KNOW</a>
+			  </p>
 
-  		 <h1 class="display-4 why-nit">NIT KURUKSHETRA </br>
-  		 </h1>
+  		 <!-- <h1 class="display-4 why-nit">NIT KURUKSHETRA </br>
+  		 </h1> -->
   			
   		</div>
-  		<div class="col-md-6 know-btn">
+  		<!-- <div class="col-md-6 know-btn">
   			<p class="lead">
-    					<a class="btn btn-primary btn-lg " href="#" role="button">Know</a>
+					<a class="button "  href="#" role="button" >KNOW</a>
   					</p>
   			
-  		</div>
+  		</div> -->
   		
   	</div>
 
@@ -774,7 +802,7 @@ $("#scrollButton").click(function(event) {
     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
 
     <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Contact us now</a>
+			<a class="button" id="button4"  href="#" role="button" >Contact Us Now</a>
   </p>
   </div>
 </div>
@@ -789,29 +817,47 @@ $("#scrollButton").click(function(event) {
     <footer class="page-footer">
 
         <div class="container.fluid">
-          <div class="row">
-            <div class="col-md-6">
-            <h5 class="title">Footer Contents</h5>
-            <p>here to put contemts</p>
-            </div>
-
-            <div class="col-md-6">
-              <h5 class="title">
-              Links
+        	<div class="row">
+            	<div class="col-12">
+					<img src="icons/logo1.png"  width="210" height="40" alt="Training and Placement Cell">
+						<hr>
+            				
+            	</div>
+		  	</div>
+			<div class="row">
+         		<div class="col-6">
+              		<h5 class="title">
+              			Links
                 
-              </h5>
-              <ul>
-                <li><a href="#!">Link1</a></li>
-                <li><a href="#!">Link1</a></li>
-                <li><a href="#!">Link1</a></li>
-                <li><a href="#!">Link1</a></li>
-                <li><a href="#!">Link1</a></li>
+              		</h5>
+              			<ul>
+                			<li><a href="#!">Link1</a></li>
+                				<li><a href="#!">Link1</a></li>
+                					<li><a href="#!">Link1</a></li>
+                						<li><a href="#!">Link1</a></li>
+                							<li><a href="#!">Link1</a></li>
                   
-                </li>
-              </ul>
+                								</li>
+              			</ul>
               
+				</div>
+				<div class="col-6">
+						<h5 class="title">
+								Links
+					  
+							</h5>
+								<ul>
+								  <li><a href="#!">Link1</a></li>
+									  <li><a href="#!">Link1</a></li>
+										  <li><a href="#!">Link1</a></li>
+											  <li><a href="#!">Link1</a></li>
+												  <li><a href="#!">Link1</a></li>
+						
+													  </li>
+								</ul>
+
+				</div>
             </div>
-          </div>
           
         </div>
     </footer>
