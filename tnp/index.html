@@ -6,8 +6,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="scrip.js"></script>
+    
+
+   
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script.min.js"></script>
+	
+
+    
+    
+
+    <!--smooth scroll-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	
+
+    
+    <!--ends scroll-->
+  <script type="text/javascript">
+  $(document).ready(function(){
+$("#scrollButton").click(function(event) {
+	// alert("h");
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      console.log(target);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+  });
+  /*$("a").on('click', function(event) {
+  	alert("something");
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });*/
+
+  </script>
+
+    
 
 
     <!-- Bootstrap CSS -->
@@ -15,28 +96,78 @@
   </head>
   <body>
 
+ 
+
 
 
   <!--contents-->
 
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="icons/logo.png" height="62px" width="62px"><h6 id="logo-top">training & placement cell</h6></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
   <!--jumbotron starts here-->
 
-  <div class="jumbotron jumbotron-fluid jumbo-index-page">
-  	<div class="container">
-   	 <h1 class="display-3">Training & placement cell</h1>
-    	<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
 
-    		<p class="lead">
-    			<a class="btn btn-primary btn-lg" href="#" role="button">Students Login</a>
-  			</p>
- 		 <p class="lead">
-    		<a class="btn btn-primary btn-lg" href="#" role="button">Industry Login</a>
-  		</p>
+  
+
+  <div class="jumbotron jumbotron-fluid jumbo-index-page">
+  	<div class="container ">
+   	 <h1 class="display-6"></h1>
+    	<!--<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+
+    	<div class="container header-login-btn">
+    		<div class="row">
+    			<div class="col-md-6 col-12">
+    				<p class="lead">
+    					<a class="btn btn-primary btn-lg" href="#" role="button" >Students Login</a>
+  					</p>
+
+
+
+    				
+    			</div>
+    			<div class="col-md-6 col-12">
+    				<p class="lead">
+    					<a class="btn btn-primary btn-lg" href="#" role="button">Industry Login</a>
+  					</p>
+    				
+    			</div>
+    		
+    	</div>
+    		
+    	</div>
+
+    		
+ 		
 
 
 
   		<span class="scroll-btn">
-	<a id="scrollButton" href="/_a_t_n_p_site/index.html#target">
+	<a id="scrollButton" href="#kkr">
 		<span class="mouse">
 			<span>
 			</span>
@@ -60,6 +191,165 @@
   </div>
 
   <!--jumbotron ends-->
+  <hr width="25%" id="kkr">
+</br>
+</br>
+
+
+
+   <div class="container.fluid" id="procedure-steps">
+    	<div class="row">
+    		<div class="col-12 ">
+    			<h1 class="display-4 procedure-heading">Placement Procedure</h1></br>
+    			<hr width="10%" id="procedure-ruling">
+    			
+    		</div>
+    	</div>
+    </div>
+
+    <div class="container">
+    	<div class="row procedure-row">
+    		<div class="col-12 col-md-4 ">
+    			<div class="row procedure-row">
+    				<div class="col-3 col-sm-3  col-md-3  ">
+    				 	<img src="icons/invitation.png" alt="FRIENDLY SUPPORT">
+    					
+    				</div>
+    				<div class="col-9 col-sm-9 col-md-9   ">
+    					<h5>INVITATION</h5>
+    					</br>
+    					<p>The Placement office sends invitation to the companies along with the relavent information.</p>
+    					
+    				</div>
+    				
+    			</div>
+    			
+    		</div>
+
+
+    		<div class="col-12 col-md-4 ">
+    			<div class="row procedure-row">
+    				<div class="col-3 col-sm-3  col-md-3">
+    				 	<img src="icons/confirmation.png" alt="FRIENDLY SUPPORT">
+    					
+    				</div>
+    				<div class="col-9 col-sm-9 col-md-9">
+    					<h5>CONFIRMATION</h5>
+    					</br>
+    					<p>After the companies confirmation mail/call placement office sends job application form to the companies with the information</p>
+    					
+    				</div>
+    				
+    			</div>
+    			
+    		</div>
+
+
+
+    		<div class="col-12 col-md-4 ">
+    			<div class="row procedure-row">
+    				<div class="col-3 col-sm-3  col-md-3">
+    				 	<img src="icons/schedule.png" alt="FRIENDLY SUPPORT">
+    					
+    				</div>
+    				<div class="col-9 col-sm-9 col-md-9">
+    					<h5>SCHEDULING</h5>
+    					</br>
+    					<p>After receiving the fiiled JAF from the companies the PPT dates are finalised and PPT sdates are scheduled</p>
+    					
+    				</div>
+    				
+    			</div>
+    			
+    		</div>
+
+
+    		
+
+
+
+    		
+    			
+    		
+    		
+    	</div>
+
+
+
+
+    	<div class="row ">
+    		<div class="col-12 col-md-4 ">
+    			<div class="row procedure-row">
+    				<div class="col-3 col-sm-3  col-md-3">
+    				 	<img src="icons/drive.png" alt="Recruitment Drive">
+    					
+    				</div>
+    				<div class="col-9 col-sm-9 col-md-9">
+    					<h5>RECRUITMENT DRIVE</h5>
+    					</br>
+    					<p>After receiving the fiiled JAF from the companies the PPT dates are finalised and PPT sdates are scheduled</p>
+    					
+    				</div>
+    				
+    			</div>
+    			
+    		</div>
+
+
+    		<div class="col-12 col-md-4 ">
+    			<div class="row procedure-row">
+    				<div class="col-3 col-sm-3  col-md-3">
+    				 	<img src="icons/visit.png" alt="Campus Visit">
+    					
+    				</div>
+    				<div class="col-9 col-sm-9 col-md-9">
+    					<h5>CAMPUS VISIT</h5>
+    					</br>
+    					<p>After receiving the fiiled JAF from the companies the PPT dates are finalised and PPT sdates are scheduled</p>
+    					
+    				</div>
+    				
+    			</div>
+    			
+    		</div>
+
+
+
+    		<div class="col-12 col-md-4 ">
+    			<div class="row procedure-row">
+    				<div class="col-3 col-sm-3  col-md-3">
+    				 	<img src="icons/result.png" alt="Results">
+    					
+    				</div>
+    				<div class="col-9 col-sm-9 col-md-9">
+    					<h5>RESULT</h5>
+    					</br>
+    					<p>After receiving the fiiled JAF from the companies the PPT dates are finalised and PPT sdates are scheduled</p>
+    					
+    				</div>
+    				
+    			</div>
+    			
+    		</div>
+
+
+    		
+
+
+
+    		
+    			
+    		
+    		
+    	</div>
+
+
+
+
+
+
+    	
+    </div>
 
 
 
@@ -68,21 +358,111 @@
 
   
 
-  <!--quotes start-->
- <section id="target">
-		
-	
-  <hr width="95%">
-  </section>
+ 
+<!--Section: Testimonials v.1-->
+            
+  <!--<hr width="95%">-->
+
+  <!--cards start here-->
+
+ <!-- <div class="container.fluid   card-container">
+  	<div class="row">
+  		<div class="col-md">-->
+  			<!--cards-->
+  				<!--<div class="card card-index-box" style="width: 15rem;">
+  					<img class="card-img-top" src="green_grad.jpg" alt="Card image cap">
+  						<div class="card-block">
+    						<h4 class="card-title card-index" >Loreum</h4>
+   								 <p class="card-text card-index" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    								<a href="#" class="btn btn-primary card-index">Go somewhere</a>
+  						</div>
+				</div>
+
+
+
+  			
+  		</div>
+
+  		<div class="col-md">-->
+  			<!--cards-->
+  				<!--<div class="card card-index-box" style="width: 15rem;">
+  					<img class="card-img-top" src="green_grad.jpg" alt="Card image cap">
+  						<div class="card-block">
+    						<h4 class="card-title card-index" >Loreum</h4>
+   								 <p class="card-text card-index" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    								<a href="#" class="btn btn-primary card-index">Go somewhere</a>
+  						</div>
+				</div>
+
+
+				
+  			
+  		</div>
+
+  		<div class="col-md">-->
+  			<!--cards-->
+  				<!--<div class="card card-index-box" style="width: 15rem;">
+  					<img class="card-img-top" src="green_grad.jpg" alt="Card image cap">
+  						<div class="card-block">
+    						<h4 class="card-title card-index" >Loreum</h4>
+   								 <p class="card-text card-index" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    								<a href="#" class="btn btn-primary card-index">Go somewhere</a>
+  						</div>
+				</div>
+
+
+				
+  			
+  		</div>
+  		
+  	</div>
+  	
+  </div>-->
+  <!--cards ends here-->
+
+
+
+
+  <!--second jumbotron-->
+
+  <div class="jumbotron jumbotron-fluid  jumbo-index-page-2" >
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-6">
+  		 <h1 class="display-3 why-nit">Why </br>
+  		 </h1>
+
+  		 <h1 class="display-4 why-nit">NIT KURUKSHETRA </br>
+  		 </h1>
+  			
+  		</div>
+  		<div class="col-md-6 know-btn">
+  			<p class="lead">
+    					<a class="btn btn-primary btn-lg " href="#" role="button">Know</a>
+  					</p>
+  			
+  		</div>
+  		
+  	</div>
+
+
+  				  
+   
+  </div>
+</div>
+
+ <!--quotes start-->
+
 
   <div class="container">
   	<div class="row">
-  		<div class="col-md-12"  >
-  			<h1 class="quotes">
-  				QUOTES
+  		<div class="col-md-12 col-12"  >
+  			<h1 class=" display-4 quotes">
+  				TESTIMONIALS
   			</h1>
+  			<hr width="10%" >
   				<p class="lead quotes">
-  					inspirational quotes will be placed hare! Loreum ipsum dolor sit
+  					Find out what industrialist say about us.
   					
   				</p>
   			
@@ -92,89 +472,65 @@
   	
   </div>
 
+
+
+
+
   <!--quotes ends-->
-  <!--<hr width="95%">-->
-
-  <!--cards start here-->
-
-  <div class="container.fluid   card-container">
+  <div class="container">
   	<div class="row">
-  		<div class="col-md">
-  			<!--cards-->
-  				<div class="card card-index-box" style="width: 15rem;">
-  					<img class="card-img-top" src="green_grad.jpg" alt="Card image cap">
-  						<div class="card-block">
-    						<h4 class="card-title card-index" >Loreum</h4>
-   								 <p class="card-text card-index" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    								<a href="#" class="btn btn-primary card-index">Go somewhere</a>
+  		<div class="col-md-4">
+
+  				<figure class="snip1192">
+  					<blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+  						<div class="author">
+    						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+    							<h5>Pelican Steve <span> LittleSnippets</span></h5>
   						</div>
-				</div>
+				</figure>
+
+
+
+
 
 
 
   			
   		</div>
 
-  		<div class="col-md">
-  			<!--cards-->
-  				<div class="card card-index-box" style="width: 15rem;">
-  					<img class="card-img-top" src="green_grad.jpg" alt="Card image cap">
-  						<div class="card-block">
-    						<h4 class="card-title card-index" >Loreum</h4>
-   								 <p class="card-text card-index" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    								<a href="#" class="btn btn-primary card-index">Go somewhere</a>
+  		<div class="col-md-4">
+  			<figure class="snip1192">
+  					<blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+  						<div class="author">
+    						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+    							<h5>Pelican Steve <span> LittleSnippets</span></h5>
   						</div>
-				</div>
-
-
-				
+				</figure>
   			
   		</div>
 
-  		<div class="col-md">
-  			<!--cards-->
-  				<div class="card card-index-box" style="width: 15rem;">
-  					<img class="card-img-top" src="green_grad.jpg" alt="Card image cap">
-  						<div class="card-block">
-    						<h4 class="card-title card-index" >Loreum</h4>
-   								 <p class="card-text card-index" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    								<a href="#" class="btn btn-primary card-index">Go somewhere</a>
+
+
+  		<div class="col-md-4">
+  			<figure class="snip1192">
+  					<blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+  						<div class="author">
+    						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+    							<h5>Pelican Steve <span> LittleSnippets</span></h5>
   						</div>
-				</div>
-
-
-				
+				</figure>
   			
   		</div>
   		
   	</div>
   	
   </div>
-  <!--cards ends here-->
 
 
 
+  
+<!--Section: Testimonials v.1-->
 
-  <!--second jumbotron-->
-
-  <div class="jumbotron jumbotron-fluid  jumbo-index-page-2">
-  <div class="container">
-
-  				  <div class="jumbotron jumbo-index-three">
- 					 <div class="container">
- 					 		<p class="lead">
-    							<a class="btn btn-primary btn-lg  button-jumbo-2-index" href="#" role="button">Know More</a>
-  							</p>
-
-
-
-  				
-   
-  					</div>
-				</div>
-   
-  </div>
-</div>
   <!--second jumbotron ends-->
 
 
@@ -246,12 +602,12 @@
 </div>-->
   <!--3rd jumbotron ends-->
 
-  <hr width="95%">
+  
 
 
 
 
-  <div class="container zig-zag">
+  <!--<div class="container zig-zag">
   	<div class="row">
   		<div class="col-md-6 zig zig-zag-2">
   			Lorem ipsum dolor sit amet, sea no meliore phaedrum mediocrem, pri ei verear maluisset voluptatibus. In laudem platonem vis. Est quot vide inani ex. Sea et graecis recteque adipiscing, erroribus sententiae vituperata per an. Id per nibh discere, ius id ubique suscipit. Fierent antiopam at per.
@@ -324,11 +680,95 @@
   		
   	</div>
   	
-  </div>
+  </div>-->
 
+  
+    
+
+    
+
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    			
+    			
+    	
+    		<!--<div class="row" >
+    		<div class="col-md-4 col-xs-12 procedure-steps-individual">
+    			<div class="row">
+    				<div class="col-xs-3 col-sm-3 col-md-3">
+    					<img src="http://cascadia.netgon.ru/wp-content/uploads/2017/01/icon_design-2.png" alt="TRENDING DESIGN">
+    					
+    				</div>
+    				
+    			</div>
+    			coloumn1</br>
+    			Lorem ipsum dolor sit amet, his eu inimicus recteque consequat, qui eu ullum periculis temporibus.
+    			
+    		</div>-->
+
+    		<!--<div class="col-md-4 procedure-steps-individual">
+    			column 2</br>
+    			Lorem ipsum dolor sit amet, his eu inimicus recteque consequat, qui eu ullum periculis temporibus. 
+    			
+    		</div>
+
+    		<div class="col-md-4 procedure-steps-individual">
+    			coloumn 3</br>
+    			Lorem ipsum dolor sit amet, his eu inimicus recteque consequat, qui eu ullum periculis temporibus. 
+    			
+    		</div>
+    		
+    	</div>
+    		
+    		
+    		
+    	</div>
+    
+    	
+
+
+
+    	<div class="row" >
+    		<div class="col-md-4 procedure-steps-individual">
+    			coloumn4</br>
+    			Lorem ipsum dolor sit amet, his eu inimicus recteque consequat, qui eu ullum periculis temporibus. 
+    			
+    		</div>
+
+    		<div class="col-md-4 procedure-steps-individual">
+    			column 5</br>
+    			Lorem ipsum dolor sit amet, his eu inimicus recteque consequat, qui eu ullum periculis temporibus. .
+    			
+    		</div>
+
+    		<div class="col-md-4 procedure-steps-individual">
+    			coloumn 6</br>
+    			Lorem ipsum dolor sit amet, his eu inimicus recteque consequat, qui eu ullum periculis temporibus. 
+    		</div>
+    		
+    	</div>
+    	
+    </div>-->
+    <!--<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+ 
 
   <!--contact us-->
-  <div class="jumbotron jumbotron-fluid contact-us">
+  <div class="jumbotron" id="contact-us">
   <div class="container">
     <h3 class="display-3">Contact us</h3>
     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
@@ -394,7 +834,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
