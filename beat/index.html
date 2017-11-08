@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>play the beat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Avinash Bharti">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color:#272D2D;color:#F6F8FF">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="show" style="display:none">
+                <h3 style="color:#ffc600;font-weight:100">SORRY! works only on PC/LAPTOP.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="wrap" id="mob">
+
+        <div class="container" style="margin-top:100px;text-align:center">
+            <div class="row">
+
+
+                <div class="col-12" style="align-items:center">
+                    <div style="background-image:url(drum.png);background-size:30%;background-repeat:no-repeat;height:150px;margin-left:28vw"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text" style="font-family: 'Permanent Marker', cursive;font-size:150px;color:#ffc600">Beat</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-6 col-md-1">
+
+                    <div data-key="65" class="key" id="key">
+                        <kbd>A</kbd>
+                        <span class="sound">clap</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-1">
+                    <div data-key="83" class="key">
+                        <kbd>S</kbd>
+                        <span class="sound">hihat</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-1">
+                    <div data-key="68" class="key">
+                        <kbd>D</kbd>
+                        <span class="sound">kick</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-1">
+                    <div data-key="70" class="key">
+                        <kbd>F</kbd>
+                        <span class="sound">openhat</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-1">
+                    <div data-key="71" class="key">
+                        <kbd>G</kbd>
+                        <span class="sound">boom</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-1">
+                    <div data-key="72" class="key">
+                        <kbd>H</kbd>
+                        <span class="sound">ride</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-1">
+                    <div data-key="74" class="key">
+                        <kbd>J</kbd>
+                        <span class="sound">snare</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-1">
+                    <div data-key="75" class="key">
+                        <kbd>K</kbd>
+                        <span class="sound">tom</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-1">
+                    <div data-key="76" class="key">
+                        <kbd>L</kbd>
+                        <span class="sound">tink</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align:center;margin-top:30px">
+            <div classs="row">
+                <div class="col-12">
+                    <h5 style="font-weight:100">INSTRUCTION: Hit the keys on your keyboard as shown above for respective drum sound effects.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
+    <script>
+        function removeTransition(e) {
+            if (e.propertyName !== 'transform') return;
+            e.target.classList.remove('playing');
+        }
+
+        function playBeat(e) {
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+            if (!audio) return;
+
+            key.classList.add('playing');
+
+            audio.currentTime = 0;
+            audio.play();
+
+        }
+        const keys = Array.from(document.querySelectorAll('.key'));
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+        window.addEventListener('keydown', playBeat);
+
+
+        document.addEventListener("touchstart", playBeat, true);
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
