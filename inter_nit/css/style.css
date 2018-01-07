@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+body{
+	background-color:#f8f8f8;
+}
+.page_two{
+	background-color:#262626;
+}
+.page_four{
+	background-color:#262626 ;
+}
+.navbar-style{
+	margin-top:20px;
+	position: fixed;
+	margin-right:60px;
+	margin-left:40px;
+
+}
+.nav-item{
+	margin-left:10px;
+	margin-right:10px;
+}
+.nav-text{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:.90em;
+	letter-spacing: .1em;
+	text-decoration:none;
+	color:#1d1d1d;
+	/*display:inline-block;*/
+	/*padding: 1em .7em .5em 0;*/
+	overflow:hidden;
+	position:relative;
+	transition:.2s;
+	cursor:pointer;
+}
+nav ul a::after{
+    content: '';
+    display: block;
+    width: 0;
+    /*height: 1px;*/
+    transition: width .5s;
+    
+}
+nav ul a:hover::after{
+	background-color: transparent;
+	border-bottom: solid;
+	border-color: #1d1d1d;
+	border-width: 1px;
+	width: 100%;
+
+}
+
+.nit-div{
+	background-color:#252525;
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	padding: 2.5px;
+	text-align: center;
+	box-shadow: 0 13px 18px rgba(94, 94, 94, 0.35);
+	margin-left:15px;
+}
+.get-set-go{
+	font-family:'Rubik', sans-serif;
+	color:#262626;
+	
+	font-size:9vw;
+}
+.container_page_one{
+	padding:10vw;
+}
+.date_page_one{
+	text-align: right;
+	font-size:20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.inter_nit_page_one{
+	font-size:20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.events_page_one{
+	background-color:#262626;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:25px;
+	text-align:center;
+	padding:10px;
+}
+
+.about_image{
+	background-image: url("sports.png");
+	background-size: 50vh 30vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color:#f8f8f8;
+}
+.about_title{
+	background-color:#f8f8f8;
+	height:45vh;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:4vw;
+}
+.about_div{
+	transform: rotate(90deg);
+	padding:4vw;
+
+}
+.about_content{
+	color:white;
+	padding-top: 30vh;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:4vh;
+}
+.organisers_title{
+	background-color:#f8f8f8;
+	height:55vh;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:3.5vw;
+}
+.organisers_div{
+	transform: rotate(90deg);
+	padding:4vw;
+}
+.cards_div{
+	height:100vh;
+	padding:10vw;
+}
+.get-in-touch-div{
+	background-color:#252525;
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	padding: 2.5px;
+	text-align: center;
+	box-shadow: 0 13px 18px rgba(94, 94, 94, 0.35);
+	margin-bottom:5vh;
+	margin-top:5vh;
+
+}
+.email-id{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:20px;
+}
+.card_style{
+	background-color:#f8f8f8;
+	
+
+}
+.page_two_height{
+	height: 100vh;
+}
+@media only screen and (max-width: 500px){
+	.get-set-go{
+		font-size:18.7vw;
+	}
+	.about_div{
+		font-size:30px;
+	}
+	.about_title{
+		height: 25vh;
+	}
+	.about_content{
+		padding-top:15px;
+		font-size:20px;
+	}
+	.page_two_height{
+		height:;
+	}
+	.about_image{
+		visibility: hidden;
+	}
+	.organisers_title{
+		height:30vh;
+	}
+	.organisers_div{
+		font-size:30px;
+	}
+}
