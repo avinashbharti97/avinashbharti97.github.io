@@ -242,6 +242,14 @@ nav ul a:hover::after{
 	position:absolute;
 	bottom:0;
 }
+.event_container{
+	margin-top:10vh;
+	overflow: scroll;
+	overflow-x: hidden;
+	height:80vh;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
 
 
 
