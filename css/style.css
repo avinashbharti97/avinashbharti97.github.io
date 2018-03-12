@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+body, html{
+
+	overflow-x: hidden !important;
+	background-color:#1d1d1d;
+	/*color:#ffc600;*/
+	color:#ffc857;
+	font-family:'VT323', monospace;
+	text-decoration-style: none !important;
+
+}
+a:link {
+    text-decoration: none;
+    /*color:#bfb48f;*/
+    color:#ffc857;
+}
+a:visited {
+    text-decoration: none;
+    /*color:#bfb48f;*/
+    color:#ffc857;
+}
+
+a:hover {
+    text-decoration: none;
+    /*color:#bfb48f;*/
+    color:#ffc857;
+}
+
+a:active {
+    text-decoration: none;
+    color:#ffc857;
+}
+.card-style{
+	background-color:#262626;
+	height:30vh;
+	text-align:center;
+	padding:50px;
+}
+.m-t{
+	border-style:solid;
+	border-color:#1d1d1d;
+	border-top:2.5px;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+}
+.m-b{
+	border-style:solid;
+	border-color:#1d1d1d;
+	border-width:2.5px;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+.m-l{
+	border-style:solid;
+	border-color:#1d1d1d;
+	border-width:2.5px;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	/*border-bottom:none;*/
+}
+.m-r{
+	border-style:solid;
+	border-color:#1d1d1d;
+	border-width:2.5px;
+	border-left:none;
+	border-top:none;
+	/*border-bottom:none;*/
+}
+img{
+	max-height: 100%;
+	max-width:100%;
+}
