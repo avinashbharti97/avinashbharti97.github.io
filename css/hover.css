@@ -1604,8 +1604,8 @@
   right: 0;
   bottom: 0;
   /*background: #2098D1;*/
-  /*background:#ffc857;*/
-  background: linear-gradient(to right, #FF5F6D , #FFC371);
+  background:#ffc857;
+  /*background: linear-gradient(to right, #FF5F6D , #FFC371);*/
   border-radius: 100%;
   -webkit-transform: scale(0);
   transform: scale(0);
