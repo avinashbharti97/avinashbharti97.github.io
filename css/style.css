@@ -11,6 +11,26 @@ body, html{
 	text-decoration-style: none !important;
 
 }
+.name{
+	background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+	background: -webkit-linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+h3{
+	background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+	background: -webkit-linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+  color:white;
+}
+
+/* .emoji{
+	background-color:#262626;
+	border-radius:50%;
+} */
 a:link {
     text-decoration: none;
     /*color:#bfb48f;*/

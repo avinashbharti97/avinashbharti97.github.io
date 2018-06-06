@@ -6,13 +6,13 @@ $("#modal01").animatedModal({
                 // Callbacks
                 beforeOpen: function() {
                     console.log("The animation was called");
-                },           
+                },
                 afterOpen: function() {
                     console.log("The animation is completed");
-                }, 
+                },
                 beforeClose: function() {
                     console.log("The animation was called");
-                }, 
+                },
                 afterClose: function() {
                     console.log("The animation is completed");
                 }
@@ -26,13 +26,13 @@ $("#modal02").animatedModal({
                 // Callbacks
                 beforeOpen: function() {
                     console.log("The animation was called");
-                },           
+                },
                 afterOpen: function() {
                     console.log("The animation is completed");
-                }, 
+                },
                 beforeClose: function() {
                     console.log("The animation was called");
-                }, 
+                },
                 afterClose: function() {
                     console.log("The animation is completed");
                 }
@@ -48,13 +48,13 @@ $("#modal03").animatedModal({
                 // Callbacks
                 beforeOpen: function() {
                     console.log("The animation was called");
-                },           
+                },
                 afterOpen: function() {
                     console.log("The animation is completed");
-                }, 
+                },
                 beforeClose: function() {
                     console.log("The animation was called");
-                }, 
+                },
                 afterClose: function() {
                     console.log("The animation is completed");
                 }
@@ -68,13 +68,13 @@ $("#modal04").animatedModal({
                 // Callbacks
                 beforeOpen: function() {
                     console.log("The animation was called");
-                },           
+                },
                 afterOpen: function() {
                     console.log("The animation is completed");
-                }, 
+                },
                 beforeClose: function() {
                     console.log("The animation was called");
-                }, 
+                },
                 afterClose: function() {
                     console.log("The animation is completed");
                 }
@@ -88,13 +88,13 @@ $("#modal05").animatedModal({
                 // Callbacks
                 beforeOpen: function() {
                     console.log("The animation was called");
-                },           
+                },
                 afterOpen: function() {
                     console.log("The animation is completed");
-                }, 
+                },
                 beforeClose: function() {
                     console.log("The animation was called");
-                }, 
+                },
                 afterClose: function() {
                     console.log("The animation is completed");
                 }
@@ -108,13 +108,13 @@ $("#modal06").animatedModal({
                 // Callbacks
                 beforeOpen: function() {
                     console.log("The animation was called");
-                },           
+                },
                 afterOpen: function() {
                     console.log("The animation is completed");
-                }, 
+                },
                 beforeClose: function() {
                     console.log("The animation was called");
-                }, 
+                },
                 afterClose: function() {
                     console.log("The animation is completed");
                 }
@@ -128,13 +128,13 @@ $("#modal07").animatedModal({
                 // Callbacks
                 beforeOpen: function() {
                     console.log("The animation was called");
-                },           
+                },
                 afterOpen: function() {
                     console.log("The animation is completed");
-                }, 
+                },
                 beforeClose: function() {
                     console.log("The animation was called");
-                }, 
+                },
                 afterClose: function() {
                     console.log("The animation is completed");
                 }
