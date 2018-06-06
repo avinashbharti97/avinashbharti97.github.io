@@ -1439,6 +1439,19 @@
   transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+  border-style:solid;
+
+  border-width:15px;
+  border-left:none;
+  border-top:none;
+  border-bottom:none;
+
+
+  -webkit-border-image:
+    -webkit-linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border-image:
+    linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border-image-slice: 1;
 }
 .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
   color: white;
